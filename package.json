@@ -1,0 +1,28 @@
+{
+  "name": "neural-network",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://rbpinheiro@bitbucket.org/rbpinheiro/neural-network.git",
+    "type": "git"
+  },
+  "author": "Rafael Pinheiro <moriarty.pinheiro@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"webpack\" \"webpack-dev-server --content-base build/\""
+  },
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-inline-import": "^2.0.4",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "concurrently": "^3.3.0",
+    "mathjs": "^3.9.3",
+    "p2": "^0.7.1",
+    "phaser": "^2.6.2",
+    "script-loader": "^0.7.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}

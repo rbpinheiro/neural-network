@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neural Network</title>
+  <style>
+    * {
+      font-size: 1em;
+      margin:0;
+      padding:0;
+      font-family: helvetica, sans-serif;
+    }
+    .intro {
+      margin: 10px;
+    }
+    .control-panel {
+      margin: 10px;
+      width: 230px;
+    }
+    label {
+      display: block;
+      width:100%;
+      margin-bottom: 10px;
+    }
+    input {
+      float: right;
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <h1>Mine Sweeper</h1>
+    <p>A mine field, yellow are deactivated mines and red are active mines</p>
+    <p>The neural net and genetic algorithm powered sweepers must avoid the red and collect the yellow ones.</p>
+    <p>They <strong>should</strong> get smarter each generation</p>
+  </div>
+  <div id="game"></div>
+  <div class="control-panel">
+    <label>Sweepers <input name="numSweepers" type="number" value="20"></label>
+    <label>Inactive Mines <input name="numMines" type="number" value="30"></label>
+    <label>Active Mines <input name="numActiveMines" type="number" value="15"></label>
+    <label>Generation Timespan <input name="ticksPerGeneration" type="number" value="2000"></label>
+    <label>Hidden Layers <input name="numHiddenLayers" type="number" value="1"></label>
+    <label>Neurons per Layer <input name="numNeuronsPerHiddenLayer" type="number" value="6"></label>
+    <label>Mutation Rate <input name="mutationRate" type="number" value="0.3"></label>
+    <label>Crossover Rate <input name="crossoverRate" type="number" value="0.4"></label>
+    <button id="start-button">Start</button>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
